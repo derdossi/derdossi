@@ -88,3 +88,37 @@ console.log(`${a} is greater than ${b}: ${a > b}`) // 2 is greater than 3: false
 let js = `JavaScript`
 console.log(js.length) // 10
 console.log(firstName.length) // Data from line 2. 8
+    // 2. Accessing characters in a string. Using Index we can access each character. Index starts at 0 and the last Index is the length of the string minus one.
+    // J(0) a(1) v(2) a(3) S(4) c(5) r(6) i(7) p(8) t(9)
+let string = `JavaScript`
+let firstLetter = string[0]
+
+console.log(firstLetter) // J
+
+let secondLetter = string[1] // a 
+let thirdLetter = string[2]
+let lastLetter = string[9]
+
+console.log(lastLetter) // t 
+
+let lastIndex = string.length - 1
+console.log(lastIndex) // 9
+console.log(string[lastIndex])
+
+// 3. toUpperCase() - Change string to Uppercase letters 
+console.log(string.toUpperCase()) // Data from line 93. JAVASCRIPT
+console.log(firstName.toUpperCase()) // Data from line 2. ASABENEH
+console.log(country.toUpperCase()) // Data from line 5. FINLAND
+
+// 4. toLowerCase() - Change string to lowercase letters
+console.log(string.toLowerCase()) // Data from line 93. javascript.
+console.log(firstName.toLowerCase()) // Data from Line 2. asabeneh
+console.log(country.toUpperCase()) // Data from line 5. finland
+
+// 5. subtr(): take two arguments, the starting Index and number of characters to slice
+
+console.log(string.substr(4, 6)) // Script
+consol.log(country.substr(3, 4)) // land
+
+// 6. substring() takes two arguments, the starting Index and the stopping Index. Does not include the character at the stopping index.
+console.log(string.substring(0, 4)) // Java
