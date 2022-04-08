@@ -59,4 +59,48 @@ let jargon = "jargon"
 console.log(python.length)
 console.log(jargon.length)
 console.log(jargon === python)
-    //
+    /* 
+     Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+     i. true
+     ii. false
+     iii. true
+     iv. true
+     v. false
+     vi. true
+     vii.true
+     viii. false
+     ix. true
+     x. true
+     */
+console.log(4 > 3 && 10 < 12) // true
+console.log(4 > 3 && 10 > 12) // false
+console.log(4 > 3 || 10 < 12) // true
+console.log(4 > 3 || 10 > 12) // true
+console.log(!(4 > 3)) // false
+console.log(!(4 < 3)) // true
+console.log(!(false)) // true
+console.log(!(4 > 3 && 10 < 12)) // false
+console.log(!(4 > 3 && 10 > 12)) // true
+console.log(!(4 === "4")) // true
+let dragon = "dragon"
+console.log(!(python.includes("on"))) // false
+console.log(!(dragon.includes("on"))) // false
+    /* 7.
+    Use the Date object to do the following activities
+
+    What is the year today?
+    What is the month today as a number?
+    What is the date today?
+    What is the day today as a number?
+    What is the hours now?
+    What is the minutes now?
+    Find out the numbers of seconds elapsed from January 1, 1970 to now.
+    */
+const now = new Date()
+console.log(now.getFullYear())
+console.log(now.getMonth())
+console.log(now.getDate())
+console.log(now.getDay())
+console.log(now.getHours())
+console.log(now.getMinutes())
+console.log(now.getTime())
