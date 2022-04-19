@@ -12,6 +12,7 @@ if (grade >= 80) {
     console.log("You Failed")
 }
 */
+/*
 let userInputMonth = prompt("Enter the current month")
 let month = userInputMonth.toLowerCase()
 switch (month) {
@@ -38,3 +39,23 @@ switch (month) {
     default:
         console.log("This is not a month")
 }
+*/
+/*
+let userInputDay = prompt("what day is today?")
+let day = userInputDay.toLowerCase()
+let days = day[0].toUpperCase() + day.substring(1);
+switch (day) {
+    case "monday":
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+    case "friday":
+        console.log(`${days} is a working day`)
+        break;
+    case "saturday":
+    case "sunday":
+        console.log(`${days} is a weekend`)
+    default:
+        console.log("This is not a day")
+}
+*/
