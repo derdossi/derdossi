@@ -1,5 +1,4 @@
 function findDuplicates() {
-  const number = [2, 4, 5, 2, 5, 8, 5, 4711];
   for (let i = 0; i < number.length; i++) {
     const numberATI = number[i];
     for (let j = i + 1; j < number.length; j++) {
