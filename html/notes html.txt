@@ -8,3 +8,16 @@
     - a <h1> defines the main heading. Sub headings: <h2>, <h3>, <h4>, <h5>, <h6>, <h7>.
     - text between <p> and </p> is a paragraph.
 5. After each opening tag, the next element should be indented(with a tab or two spaces) for better overview.
+6. To insert and image we use <img>. It has one opening tag but no closing tag. It contains a src and an alt attribute.
+    - The src attribute specifies the URL, that is the location and name of the image. 
+    - The alt attribute is an "alternative text", which describes the content of them image. (Useful for search engines and if for no reason the image cannot be
+    displayed)
+
+Relative and absolute URLs
+
+- URLs used for src attribute in images and also for the href attribute of lings. The URL specifies the "address" of the file. Depending on the location of the file
+a relative or absolute URL must be used.
+- If a file is part of a website, then a Relative URL can be used.
+- Either relative to the current html page or relative to the root of the website.
+- Same folder : File name can be used (I.e dossi.png).
+- 
