@@ -1,0 +1,30 @@
+Basics
+
+- HTML describes the structure of the website and css defines the visual appearance.
+- It is not mandatory to differentiate between structure and style. But it usually better to write css and html in different files.
+- CSS files end with the extension .css
+- Linking a css file to a HTML file is done by <link> element.
+
+Color styles
+
+- The combination of color is represented by a mixture of different portions of Red, Green and Blue (RGB).
+- These can be expressed in different ways (example indicates the color grey):
+        Hex values : #607d8b
+        RGB values : rgb(96, 125, 139)
+
+CSS Selectors 
+- Type Selectors : targets all elements with a specific html tag. (I.e p { ...} to target all paragraphs [<p>...</p>])
+
+- Class Selectors
+    - used very frequently. They select specific "classes" (groups of elements) rather than all elements of one type.
+    - To use a class selector add a class attribute to an element(of any value) (i.e <p class="dossi">...</p>)
+    - In CSS you can now address all elements that have the same class attribute.
+    - In CSS classes are denoted by a leading point and the class value(i.e .dossi {...}).
+    - Items can have multiple classes separated by a space (<p class="dossi boggo">...</p>) 
+- ID Selectors
+    - are very similar to Class selectors. They select all HTML elements with an attribute id with a specific value. (i.e <p id="navigation"> ...</p>)
+    - Ids are denoted by a leading hash sign (#) followed by the id value. (i.e #navigation { ...})
+    - IMPORTANT: The ID selector should only be used once in a HTML page, while a class may be used for any number of elements.
+
+- More selectors via google search. (CSS Selectors)
+

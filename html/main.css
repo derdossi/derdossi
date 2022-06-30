@@ -1,0 +1,23 @@
+h2 {
+    display: table;
+    background-color: #ff0a0a;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.title {
+    font-size: 65px;
+}
+
+/*h1 { (Color only behind text
+    display: table;  keep the background color wrapped tight 
+    margin: 0px auto 0px auto;  (keep the table centered) 
+    padding:5px;font-size:5px;background-color:green;color:#ffffff;
+}
+*/
+.date {
+    display:table;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding:5px;font-size:15px;background-color:green;color:#ffffff;
+}
