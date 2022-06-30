@@ -20,4 +20,17 @@ a relative or absolute URL must be used.
 - If a file is part of a website, then a Relative URL can be used.
 - Either relative to the current html page or relative to the root of the website.
 - Same folder : File name can be used (I.e dossi.png).
-- 
+- If in a different folder : Folder name must be given (I.e. images/dossi.png)
+- If in the parent folder : you can use .. (I.e. ../dossi.png)
+- If in the root directory : use / (I.e. /dossi.png)
+
+Absolute URLs
+If the file you want to use is located on another website you have to use the full websites name (e.g. http://dossi.website.de/images/dossi.png).
+
+<!-- Relative URLs -->
+<a href="image-gallery.html">Image Gallery</a>
+<a href="blog/first-blog-entry.html">My First Blog Entry</a>
+<a href="../image-gallery.html">Back to Image Gallery</a>
+
+<!-- Absolute URLs -->
+<a href="http://www.my-colleague.com/blog.html">Blog of a Colleague</a>
