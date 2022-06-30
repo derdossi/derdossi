@@ -1,0 +1,4 @@
+1. Always put <Doctype html> on the first line of the document. It tells the browser the type of the document.
+2. <html> indicates the start of the document and </html> indicates the end of the document.
+3. <head> element contains additional information about the page. It does not appear in the main area of the page.
+4. 
