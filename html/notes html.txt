@@ -1,4 +1,10 @@
 1. Always put <Doctype html> on the first line of the document. It tells the browser the type of the document.
 2. <html> indicates the start of the document and </html> indicates the end of the document.
 3. <head> element contains additional information about the page. It does not appear in the main area of the page.
-4. 
+    - within the <head> element : indication of character set (i.e <meta charset = "UTF-8" />). If not specified some special characters might not be displayed.
+    - <meta> element has no closing tag: Exception like <br>, <img> etc..
+    - <title> element is displayed at the top of the browser window.
+4.  Everything inside the <body> element is displayed in the main area of the browser.
+    - a <h1> defines the main heading. Sub headings: <h2>, <h3>, <h4>, <h5>, <h6>, <h7>.
+    - text between <p> and </p> is a paragraph.
+5. After each opening tag, the next element should be indented(with a tab or two spaces) for better overview.
