@@ -1,0 +1,3 @@
+The Bootstrap Grid
+- 12 column grid system. We define our columns by specifying how many columns out of the possible 12 we would like to use.
+- 
