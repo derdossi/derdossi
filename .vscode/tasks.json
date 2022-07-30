@@ -1,5 +1,13 @@
+/**
+*  
+*   To compile just the current active file run the "build active file" Task.
+*
+*   To compile all source file in the workspace run the "build current directory" Task (remember
+*   that in this case you can have only one source file with a function named "main" in workspaceFolder).
+*/
 {
     "version": "2.0.0",
+
     "tasks": [
         {
             "type": "shell",
@@ -25,6 +33,7 @@
                 "command": ".\\.vscode\\make_build_dir.bat\""
             }
         },
+
         {
             "type": "shell",
             "label": "build active file",
@@ -47,7 +56,7 @@
                     "-Wall",
                     "${file}",
                     "-o",
-                    "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+                    "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
                 ]
             },
             "linux": {
@@ -59,7 +68,7 @@
                     "${file}",
                     "-o",
                     "${workspaceFolder}/build/${fileBasenameNoExtension}"
-                ]
+                ],
             },
             "osx": {
                 "command": "/usr/bin/clang",
@@ -70,9 +79,10 @@
                     "${file}",
                     "-o",
                     "${workspaceFolder}/build/${fileBasenameNoExtension}"
-                ]
+                ],
             }
         },
+
         {
             "type": "shell",
             "label": "build current directory",
@@ -92,7 +102,7 @@
                     "-Wall",
                     "${workspaceFolder}\\*.c",
                     "-o",
-                    "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+                    "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
                 ]
             },
             "linux": {
@@ -104,7 +114,7 @@
                     "${workspaceFolder}\\*.c",
                     "-o",
                     "${workspaceFolder}/build/${fileBasenameNoExtension}"
-                ]
+                ],
             },
             "osx": {
                 "command": "/usr/bin/clang",
@@ -115,37 +125,19 @@
                     "${workspaceFolder}\\*.c",
                     "-o",
                     "${workspaceFolder}/build/${fileBasenameNoExtension}"
-                ]
+                ],
             }
         },
+
         {
+            //Mac only: use if the external console does not open on launch
             "label": "Open Terminal",
             "type": "shell",
             "command": "echo \"Mac only!\"",
             "osx": {
-                "command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo Ready\"\nend tell'"
+                "command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo Ready\"\nend tell'",
             },
             "problemMatcher": []
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: clang.exe Aktive Datei kompilieren",
-            "command": "C:\\Program Files\\mingw64\\bin\\clang.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "detail": "Vom Debugger generierte Aufgabe."
         }
     ]
 }
