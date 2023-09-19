@@ -47,7 +47,7 @@
         "cwd": "${workspaceFolder}"
       },
       "windows": {
-        "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+        "command": "C:\\msys64\\ucrt64\\bin\\gcc",
         "args": [
           "-std=c11",
           "-g",
@@ -91,7 +91,7 @@
         "cwd": "${workspaceFolder}"
       },
       "windows": {
-        "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+        "command": "C:\\msys64\\ucrt64\\bin\\gcc",
         "args": [
           "-std=c11",
           "-g",
