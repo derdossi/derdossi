@@ -1,4 +1,4 @@
-{
+{y
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -23,7 +23,7 @@
 
       "windows": {
         "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
-        "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe"
+        "miDebuggerPath": ""
       },
 
       "osx": {
